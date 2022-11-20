@@ -85,7 +85,10 @@ Node *RemoveNode(LinkedList *lista, int value){
     lista -> count--;
     return toRemove;
     }
-  else return NULL;
+  else {
+    delete toRemove;
+    return nullptr;
+  }
 }
 
 void Clear(LinkedList *lista){
@@ -102,18 +105,18 @@ void Clear(LinkedList *lista){
 
 void Destroy(LinkedList *lista){
   Clear(lista);
-  delete[] lista;
+  delete lista;
 }
 
-Node *GetHead(LinkedList *lista){
+Node *GetHead(const LinkedList *lista){
   return lista -> head;
 }
 
-Node *GetTail(LinkedList *lista){ 
+Node *GetTail(const LinkedList *lista){ 
   return lista -> tail;
 }
 
-Node *GetNode(LinkedList *lista, int value){
+Node *GetNode(const LinkedList *lista, int value){
   Node* nodo = new Node;
   int i = lista -> count;
   nodo  = lista -> head;
@@ -127,9 +130,10 @@ Node *GetNode(LinkedList *lista, int value){
     if (i == 0) break;
   }
   std::cout << "Nao ha nodo com o id solicitado.\n";
-  return NULL;
+  delete nodo;
+  return nullptr;
 }
 
-int Count(LinkedList *lista){ 
+int Count(const LinkedList *lista){ 
   return lista -> count;
 }

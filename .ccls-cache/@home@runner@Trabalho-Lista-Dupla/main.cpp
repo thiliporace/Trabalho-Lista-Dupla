@@ -4,7 +4,7 @@
 
 //Nomes:
 //Thiago Leandro Liporace 42128481
-//Lucas Goulart d
+//Lucas Goulart de Farias Meres 42127459
 
 //Autoavaliacao:
 //Thiago: Eu considero este trabalho um 10, ja que todas as operacoes funcionam como o esperado e a lista funciona sendo dupla e circular. Trabalhamos muito duro durante uma tarde inteira para finaliza-lo, apos montar algumas operacoes a mao pois nao encontravamos as respostas em nenhum local.

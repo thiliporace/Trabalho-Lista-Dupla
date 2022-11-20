@@ -24,8 +24,8 @@ Node *RemoveTail(LinkedList *lista);
 Node *RemoveNode(LinkedList *lista, int value);
 void Clear(LinkedList *lista);
 void Destroy(LinkedList *lista);
-Node *GetHead(LinkedList *lista);
-Node *GetTail(LinkedList *lista);
-Node *GetNode(LinkedList *lista, int value);
-int Count(LinkedList *lista);
+Node *GetHead(const LinkedList *lista);
+Node *GetTail(const LinkedList *lista);
+Node *GetNode(const LinkedList *lista, int value);
+int Count(const LinkedList *lista);
 
